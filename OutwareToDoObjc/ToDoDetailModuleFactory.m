@@ -13,17 +13,19 @@
 
 @implementation ToDoDetailModuleFactory
 
-+ (UIViewController *)createModuleWithItem:(NSInteger)itemId withDismiss:(void (^)(id))dismissBlock
++ (UIViewController *)createModuleWithItem:(NSInteger)itemIndex withDismiss:(void (^)(id))dismissBlock
 {
-    ToDoDetailPresenter* presenter = [[ToDoDetailPresenter alloc] initWithDismiss:dismissBlock];
-    ToDoDetailInteractor* interactor = [[ToDoDetailInteractor alloc] init];
-    interactor.indexToRetrieve = itemId;
-    ToDoDetailViewController* vc = [[ToDoDetailViewController alloc] initWithNibName:@"ToDoDetailViewController" bundle:[NSBundle mainBundle]];
-    vc.handler = presenter;
-    presenter.userInterface = vc;
-    presenter.interactor = interactor;
+    ToDoDetailInteractor *interactor = [[ToDoDetailInteractor alloc] init];
+    ToDoDetailPresenter *presenter = [[ToDoDetailPresenter alloc] initWithDismiss:dismissBlock];
+    ToDoDetailViewController *viewController = [[ToDoDetailViewController alloc] initWithNibName:@"ToDoDetailViewController" bundle:[NSBundle mainBundle]];
+
     interactor.presenter = presenter;
-    return vc;
+    interactor.indexToRetrieve = itemIndex;
+    presenter.userInterface = viewController;
+    presenter.interactor = interactor;
+    viewController.handler = presenter;
+
+    return viewController;
 }
 
 @end

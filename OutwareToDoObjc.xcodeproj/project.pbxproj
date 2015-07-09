@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61E4D2C496634345F0DD17FA /* libPods-OutwareToDoObjcTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 232EBC8257FFBD093F7DCCFE /* libPods-OutwareToDoObjcTests.a */; };
 		CDB3246D1A48D41E0028E8E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB3246C1A48D41E0028E8E7 /* main.m */; };
 		CDB324701A48D41E0028E8E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB3246F1A48D41E0028E8E7 /* AppDelegate.m */; };
 		CDB324731A48D41E0028E8E7 /* ToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB324721A48D41E0028E8E7 /* ToDoListViewController.m */; };
 		CDB324761A48D41E0028E8E7 /* ToDoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB324751A48D41E0028E8E7 /* ToDoDetailViewController.m */; };
 		CDB3247B1A48D41E0028E8E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB3247A1A48D41E0028E8E7 /* Images.xcassets */; };
-		CDB3248A1A48D41E0028E8E7 /* OutwareToDoObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB324891A48D41E0028E8E7 /* OutwareToDoObjcTests.m */; };
 		CDB324971A48D6B90028E8E7 /* ToDoDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB324961A48D6B90028E8E7 /* ToDoDetailPresenter.m */; };
 		CDB3249A1A48D6D20028E8E7 /* ToDoDetailModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB324991A48D6D20028E8E7 /* ToDoDetailModuleFactory.m */; };
 		CDB3249D1A48D6EE0028E8E7 /* ToDoListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB3249C1A48D6EE0028E8E7 /* ToDoListPresenter.m */; };
@@ -28,6 +28,13 @@
 		CDB324BC1A490DE80028E8E7 /* ToDoDetailInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB324BB1A490DE80028E8E7 /* ToDoDetailInteractor.m */; };
 		CDB324BF1A4910BE0028E8E7 /* ToDoDetailPresentationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB324BE1A4910BE0028E8E7 /* ToDoDetailPresentationModel.m */; };
 		CDB324C21A491A0D0028E8E7 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB324C11A491A0D0028E8E7 /* ToDoItem.m */; };
+		F70217BA1A9306D3005A5E75 /* ToDoDataStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70217B61A9306D3005A5E75 /* ToDoDataStoreTests.m */; };
+		F70217BB1A9306D3005A5E75 /* ToDoItemInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70217B71A9306D3005A5E75 /* ToDoItemInteractorTests.m */; };
+		F70217BC1A9306D3005A5E75 /* ToDoListInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70217B81A9306D3005A5E75 /* ToDoListInteractorTests.m */; };
+		F70217BD1A9306D3005A5E75 /* ToDoListPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F70217B91A9306D3005A5E75 /* ToDoListPresenterTests.m */; };
+		F74FCB571AC3BC49008A8BCA /* ToDoDetailPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F74FCB561AC3BC49008A8BCA /* ToDoDetailPresenterTests.m */; };
+		F74FCB591AC3CA63008A8BCA /* ToDoListRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F74FCB581AC3CA63008A8BCA /* ToDoListRouterTests.m */; };
+		F771B9C01AC3A9D20092FCCB /* ToDoDetailInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F771B9BF1AC3A9D20092FCCB /* ToDoDetailInteractorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		232EBC8257FFBD093F7DCCFE /* libPods-OutwareToDoObjcTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OutwareToDoObjcTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53021669B47E20FCB1FBC72C /* Pods-OutwareToDoObjcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutwareToDoObjcTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OutwareToDoObjcTests/Pods-OutwareToDoObjcTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDB324671A48D41E0028E8E7 /* OutwareToDoObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutwareToDoObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB3246B1A48D41E0028E8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB3246C1A48D41E0028E8E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,7 +63,6 @@
 		CDB3247D1A48D41E0028E8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CDB324831A48D41E0028E8E7 /* OutwareToDoObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutwareToDoObjcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB324881A48D41E0028E8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDB324891A48D41E0028E8E7 /* OutwareToDoObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutwareToDoObjcTests.m; sourceTree = "<group>"; };
 		CDB324951A48D6B90028E8E7 /* ToDoDetailPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoDetailPresenter.h; sourceTree = "<group>"; };
 		CDB324961A48D6B90028E8E7 /* ToDoDetailPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoDetailPresenter.m; sourceTree = "<group>"; };
 		CDB324981A48D6D20028E8E7 /* ToDoDetailModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoDetailModuleFactory.h; sourceTree = "<group>"; };
@@ -86,6 +94,14 @@
 		CDB324BE1A4910BE0028E8E7 /* ToDoDetailPresentationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoDetailPresentationModel.m; sourceTree = "<group>"; };
 		CDB324C01A491A0D0028E8E7 /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		CDB324C11A491A0D0028E8E7 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
+		E387ADE16C232488371E6F42 /* Pods-OutwareToDoObjcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutwareToDoObjcTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OutwareToDoObjcTests/Pods-OutwareToDoObjcTests.release.xcconfig"; sourceTree = "<group>"; };
+		F70217B61A9306D3005A5E75 /* ToDoDataStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoDataStoreTests.m; sourceTree = "<group>"; };
+		F70217B71A9306D3005A5E75 /* ToDoItemInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItemInteractorTests.m; sourceTree = "<group>"; };
+		F70217B81A9306D3005A5E75 /* ToDoListInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListInteractorTests.m; sourceTree = "<group>"; };
+		F70217B91A9306D3005A5E75 /* ToDoListPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListPresenterTests.m; sourceTree = "<group>"; };
+		F74FCB561AC3BC49008A8BCA /* ToDoDetailPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoDetailPresenterTests.m; sourceTree = "<group>"; };
+		F74FCB581AC3CA63008A8BCA /* ToDoListRouterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListRouterTests.m; sourceTree = "<group>"; };
+		F771B9BF1AC3A9D20092FCCB /* ToDoDetailInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoDetailInteractorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,18 +116,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E4D2C496634345F0DD17FA /* libPods-OutwareToDoObjcTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08E010E7B1A991BC4C5795B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				232EBC8257FFBD093F7DCCFE /* libPods-OutwareToDoObjcTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CDB3245E1A48D41E0028E8E7 = {
 			isa = PBXGroup;
 			children = (
 				CDB324691A48D41E0028E8E7 /* OutwareToDoObjc */,
 				CDB324861A48D41E0028E8E7 /* OutwareToDoObjcTests */,
 				CDB324681A48D41E0028E8E7 /* Products */,
+				DF6992141AA29601F09F69AE /* Pods */,
+				08E010E7B1A991BC4C5795B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,15 +158,15 @@
 				CDB324931A48D4250028E8E7 /* List View */,
 				CDB3246E1A48D41E0028E8E7 /* AppDelegate.h */,
 				CDB3246F1A48D41E0028E8E7 /* AppDelegate.m */,
-				CDB3247A1A48D41E0028E8E7 /* Images.xcassets */,
-				CDB3247C1A48D41E0028E8E7 /* LaunchScreen.xib */,
-				CDB3246A1A48D41E0028E8E7 /* Supporting Files */,
 				CDB324C01A491A0D0028E8E7 /* ToDoItem.h */,
 				CDB324C11A491A0D0028E8E7 /* ToDoItem.m */,
 				CDB324A41A48D72E0028E8E7 /* ToDoDataStore.h */,
 				CDB324A51A48D72E0028E8E7 /* ToDoDataStore.m */,
 				CDB324A71A48D73F0028E8E7 /* ToDoItemInteractor.h */,
 				CDB324A81A48D73F0028E8E7 /* ToDoItemInteractor.m */,
+				CDB3247A1A48D41E0028E8E7 /* Images.xcassets */,
+				CDB3247C1A48D41E0028E8E7 /* LaunchScreen.xib */,
+				CDB3246A1A48D41E0028E8E7 /* Supporting Files */,
 			);
 			path = OutwareToDoObjc;
 			sourceTree = "<group>";
@@ -156,8 +183,14 @@
 		CDB324861A48D41E0028E8E7 /* OutwareToDoObjcTests */ = {
 			isa = PBXGroup;
 			children = (
-				CDB324891A48D41E0028E8E7 /* OutwareToDoObjcTests.m */,
 				CDB324871A48D41E0028E8E7 /* Supporting Files */,
+				F70217B61A9306D3005A5E75 /* ToDoDataStoreTests.m */,
+				F771B9BF1AC3A9D20092FCCB /* ToDoDetailInteractorTests.m */,
+				F74FCB561AC3BC49008A8BCA /* ToDoDetailPresenterTests.m */,
+				F70217B71A9306D3005A5E75 /* ToDoItemInteractorTests.m */,
+				F70217B81A9306D3005A5E75 /* ToDoListInteractorTests.m */,
+				F70217B91A9306D3005A5E75 /* ToDoListPresenterTests.m */,
+				F74FCB581AC3CA63008A8BCA /* ToDoListRouterTests.m */,
 			);
 			path = OutwareToDoObjcTests;
 			sourceTree = "<group>";
@@ -194,23 +227,32 @@
 		CDB324941A48D42C0028E8E7 /* Detail View */ = {
 			isa = PBXGroup;
 			children = (
-				CDB324741A48D41E0028E8E7 /* ToDoDetailViewController.h */,
-				CDB324751A48D41E0028E8E7 /* ToDoDetailViewController.m */,
-				CDB324951A48D6B90028E8E7 /* ToDoDetailPresenter.h */,
-				CDB324961A48D6B90028E8E7 /* ToDoDetailPresenter.m */,
+				CDB324B31A48F9430028E8E7 /* ToDoDetailEventHandler.h */,
+				CDB324BA1A490DE80028E8E7 /* ToDoDetailInteractor.h */,
+				CDB324BB1A490DE80028E8E7 /* ToDoDetailInteractor.m */,
 				CDB324981A48D6D20028E8E7 /* ToDoDetailModuleFactory.h */,
 				CDB324991A48D6D20028E8E7 /* ToDoDetailModuleFactory.m */,
+				CDB324BD1A4910BE0028E8E7 /* ToDoDetailPresentationModel.h */,
+				CDB324BE1A4910BE0028E8E7 /* ToDoDetailPresentationModel.m */,
+				CDB324951A48D6B90028E8E7 /* ToDoDetailPresenter.h */,
+				CDB324961A48D6B90028E8E7 /* ToDoDetailPresenter.m */,
+				CDB324B41A48F9800028E8E7 /* ToDoDetailUserInterface.h */,
+				CDB324741A48D41E0028E8E7 /* ToDoDetailViewController.h */,
+				CDB324751A48D41E0028E8E7 /* ToDoDetailViewController.m */,
 				CDB324AA1A48F1550028E8E7 /* ToDoDetailViewController.xib */,
 				CDB324B01A48F8D10028E8E7 /* ToDoDetailViewModel.h */,
 				CDB324B11A48F8D10028E8E7 /* ToDoDetailViewModel.m */,
-				CDB324B31A48F9430028E8E7 /* ToDoDetailEventHandler.h */,
-				CDB324B41A48F9800028E8E7 /* ToDoDetailUserInterface.h */,
-				CDB324BA1A490DE80028E8E7 /* ToDoDetailInteractor.h */,
-				CDB324BB1A490DE80028E8E7 /* ToDoDetailInteractor.m */,
-				CDB324BD1A4910BE0028E8E7 /* ToDoDetailPresentationModel.h */,
-				CDB324BE1A4910BE0028E8E7 /* ToDoDetailPresentationModel.m */,
 			);
 			name = "Detail View";
+			sourceTree = "<group>";
+		};
+		DF6992141AA29601F09F69AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53021669B47E20FCB1FBC72C /* Pods-OutwareToDoObjcTests.debug.xcconfig */,
+				E387ADE16C232488371E6F42 /* Pods-OutwareToDoObjcTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDB324901A48D41E0028E8E7 /* Build configuration list for PBXNativeTarget "OutwareToDoObjcTests" */;
 			buildPhases = (
+				87600422A9FC1E753858CCE5 /* Check Pods Manifest.lock */,
 				CDB3247F1A48D41E0028E8E7 /* Sources */,
 				CDB324801A48D41E0028E8E7 /* Frameworks */,
 				CDB324811A48D41E0028E8E7 /* Resources */,
+				CD696F16CAFAE475B71B94AB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +352,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87600422A9FC1E753858CCE5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD696F16CAFAE475B71B94AB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OutwareToDoObjcTests/Pods-OutwareToDoObjcTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDB324631A48D41E0028E8E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -337,7 +414,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB3248A1A48D41E0028E8E7 /* OutwareToDoObjcTests.m in Sources */,
+				F74FCB591AC3CA63008A8BCA /* ToDoListRouterTests.m in Sources */,
+				F70217BD1A9306D3005A5E75 /* ToDoListPresenterTests.m in Sources */,
+				F70217BC1A9306D3005A5E75 /* ToDoListInteractorTests.m in Sources */,
+				F771B9C01AC3A9D20092FCCB /* ToDoDetailInteractorTests.m in Sources */,
+				F74FCB571AC3BC49008A8BCA /* ToDoDetailPresenterTests.m in Sources */,
+				F70217BA1A9306D3005A5E75 /* ToDoDataStoreTests.m in Sources */,
+				F70217BB1A9306D3005A5E75 /* ToDoItemInteractorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +544,7 @@
 		};
 		CDB324911A48D41E0028E8E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53021669B47E20FCB1FBC72C /* Pods-OutwareToDoObjcTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -480,6 +564,7 @@
 		};
 		CDB324921A48D41E0028E8E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E387ADE16C232488371E6F42 /* Pods-OutwareToDoObjcTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -512,6 +597,7 @@
 				CDB3248F1A48D41E0028E8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDB324901A48D41E0028E8E7 /* Build configuration list for PBXNativeTarget "OutwareToDoObjcTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +606,7 @@
 				CDB324921A48D41E0028E8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

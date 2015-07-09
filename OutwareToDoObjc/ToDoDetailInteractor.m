@@ -7,6 +7,7 @@
 //
 
 #import "ToDoDetailInteractor.h"
+
 #import "ToDoItemInteractor.h"
 #import "ToDoItem.h"
 #import "ToDoDetailPresentationModel.h"
@@ -15,10 +16,11 @@
 
 - (void)refreshData
 {
-    ToDoItem* item = [[ToDoItemInteractor sharedInteractor] itemAtIndex:self.indexToRetrieve];
-    ToDoDetailPresentationModel* model = [[ToDoDetailPresentationModel alloc] init];
+    ToDoItem *item = [[ToDoItemInteractor sharedInteractor] itemAtIndex:self.indexToRetrieve];
+    ToDoDetailPresentationModel *model = [[ToDoDetailPresentationModel alloc] init];
     model.title = item.title;
     model.content = item.content;
+
     [self.presenter dataAvailable:model];
 }
 

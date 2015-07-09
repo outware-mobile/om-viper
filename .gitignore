@@ -1,0 +1,19 @@
+# Build products
+Build/
+Package/
+
+# Xcode
+xcuserdata/
+*.xccheckout
+
+# Diffs
+*.orig
+
+# OS X
+.DS_Store
+
+# Vim
+*.swp
+
+# CocoaPods
+Pods/Local Podspecs/

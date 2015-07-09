@@ -14,8 +14,9 @@
 @interface ToDoDetailPresentationModel : NSObject
 
 /** The title of the to do item */
-@property (nonatomic, copy) NSString* title;
+@property (nonatomic, copy) NSString *title;
 
 /** The content of the to do item */
-@property (nonatomic, copy) NSString* content;
+@property (nonatomic, copy) NSString *content;
+
 @end

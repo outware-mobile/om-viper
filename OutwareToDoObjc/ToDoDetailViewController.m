@@ -20,6 +20,13 @@
     [super viewDidLoad];
     
     [self.handler refreshData];
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(dismissButtonTapped:)];
+}
+
+- (void)dismissButtonTapped:(id)sender
+{
+    [self.handler dismiss];
 }
 
 - (void)displayItem:(ToDoDetailViewModel *)item
@@ -27,15 +34,11 @@
     self.viewModel = item;
 }
 
-- (IBAction)dismissButtonTapped:(id)sender
-{
-    [self.handler dismiss];
-}
-
 - (void)setViewModel:(ToDoDetailViewModel *)viewModel
 {
     _viewModel = viewModel;
-    self.label.text = viewModel.title;
+
+    self.title = viewModel.title;
     self.textView.text = viewModel.content;
 }
 

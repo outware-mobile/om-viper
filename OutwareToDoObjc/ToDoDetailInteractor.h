@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "ToDoDetailPresenter.h"
 
 /**
@@ -15,7 +16,7 @@
 @interface ToDoDetailInteractor : NSObject
 
 /** The presenter to send updates on when data has been retrieved */
-@property (nonatomic, weak) ToDoDetailPresenter* presenter;
+@property (nonatomic, weak) ToDoDetailPresenter *presenter;
 
 /** The index of the to do item to retrieve */
 @property (nonatomic, assign) NSInteger indexToRetrieve;

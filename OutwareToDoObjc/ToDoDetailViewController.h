@@ -15,9 +15,6 @@
  */
 @interface ToDoDetailViewController : UIViewController <ToDoDetailUserInterface>
 
-/** The title label for the view */
-@property (weak, nonatomic) IBOutlet UILabel *label;
-
 /** The text view to display the content of the to do item */
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 

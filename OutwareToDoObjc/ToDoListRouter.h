@@ -20,6 +20,6 @@
  *  @param dismissBlock The block to be called when the detail view controller will be dismissed
  *  @return The initialised to do detail view controller
  */
-- (UIViewController*)detailViewControllerForItemAtIndex:(NSInteger)index withDismiss:(void (^)(id))dismissBlock;
+- (UIViewController *)detailViewControllerForItemAtIndex:(NSInteger)index withDismiss:(void (^)(id))dismissBlock;
 
 @end

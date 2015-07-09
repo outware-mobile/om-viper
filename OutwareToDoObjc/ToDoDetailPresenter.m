@@ -7,16 +7,21 @@
 //
 
 #import "ToDoDetailPresenter.h"
+
 #import "ToDoDetailInteractor.h"
 #import "ToDoDetailViewModel.h"
 
 @interface ToDoDetailPresenter()
-@property (nonatomic, copy) void (^dismissBlock)(id);
+
+@property (nonatomic, copy) void (^dismissBlock)(id userInterface);
+
 @end
+
+
 
 @implementation ToDoDetailPresenter
 
-- (instancetype)initWithDismiss:(void (^)(id))dismissBlock
+- (instancetype)initWithDismiss:(void (^)(id userInterface))dismissBlock
 {
     self = [super init];
     if (self) {
@@ -37,9 +42,10 @@
 
 - (void)dataAvailable:(ToDoDetailPresentationModel *)item
 {
-    ToDoDetailViewModel* viewModel = [[ToDoDetailViewModel alloc] init];
+    ToDoDetailViewModel *viewModel = [[ToDoDetailViewModel alloc] init];
     viewModel.title = item.title;
     viewModel.content = item.content;
+
     [self.userInterface displayItem:viewModel];
 }
 

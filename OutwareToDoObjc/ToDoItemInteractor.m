@@ -27,21 +27,25 @@
 
 - (void)addItem:(ToDoItem *)item
 {
-    NSMutableArray* items = [NSMutableArray arrayWithArray:[ToDoDataStore sharedStore].items];
-    [items addObject:item];
-    [ToDoDataStore sharedStore].items = [items copy];
+    if (item) {
+        NSMutableArray *items = [NSMutableArray arrayWithArray:[ToDoDataStore sharedStore].items];
+        [items addObject:item];
+        [ToDoDataStore sharedStore].items = [items copy];
+    }
 }
 
 - (void)removeItemAtIndex:(NSInteger)index
 {
-    NSMutableArray* items = [NSMutableArray arrayWithArray:[ToDoDataStore sharedStore].items];
-    [items removeObjectAtIndex:index];
-    [ToDoDataStore sharedStore].items = [items copy];
+    if (index < [[ToDoDataStore sharedStore].items count]) {
+        NSMutableArray *items = [NSMutableArray arrayWithArray:[ToDoDataStore sharedStore].items];
+        [items removeObjectAtIndex:index];
+        [ToDoDataStore sharedStore].items = [items copy];
+    }
 }
 
 - (ToDoItem *)itemAtIndex:(NSInteger)index
 {
-    return [ToDoDataStore sharedStore].items[index];
+    return index < [[ToDoDataStore sharedStore].items count] ? [ToDoDataStore sharedStore].items[index] : nil;
 }
 
 @end

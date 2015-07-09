@@ -25,7 +25,7 @@
 
 - (void)didSelectItemAtIndex:(NSInteger)index
 {
-    UIViewController* detailVC = [self.router detailViewControllerForItemAtIndex:index withDismiss:^(UIViewController* vc) {
+    UIViewController *detailVC = [self.router detailViewControllerForItemAtIndex:index withDismiss:^(UIViewController* vc) {
         [self.userInterface dismissDetailViewController:vc];
     }];
     
@@ -44,7 +44,7 @@
 
 - (void)dataAvailable:(NSArray *)items
 {
-    ToDoListViewModel* viewModel = [[ToDoListViewModel alloc] init];
+    ToDoListViewModel *viewModel = [[ToDoListViewModel alloc] init];
     viewModel.items = [items valueForKey:@"title"];
     [self.userInterface displayItems:viewModel];
 }

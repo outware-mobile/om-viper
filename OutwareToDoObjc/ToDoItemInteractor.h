@@ -25,13 +25,13 @@
  *  Method to get all the to do items
  *  @return The list of all the to do items
  */
-- (NSArray*)allItems;
+- (NSArray *)allItems;
 
 /**
  *  Method to add a new to do item
  *  @param item The new to do item to be added to the list
  */
-- (void)addItem:(ToDoItem*)item;
+- (void)addItem:(ToDoItem *)item;
 
 /**
  *  Method to remove a to do item at an index
@@ -44,6 +44,6 @@
  *  @param index The index to get the to do item
  *  @return The to do item retrieved
  */
-- (ToDoItem*)itemAtIndex:(NSInteger)index;
+- (ToDoItem *)itemAtIndex:(NSInteger)index;
 
 @end

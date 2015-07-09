@@ -16,10 +16,10 @@
 
 /**
  *  The class method to create the to do detail screen
- *  @param itemId The itemId that will be used to retrieve the to do item
+ *  @param itemIndex The index that will be used to retrieve the to do item
  *  @param dismissBlock The block that will be called when the to do detail screen is to be dismissed
  *  @return The to do detail view controller to present
  */
-+ (UIViewController*)createModuleWithItem:(NSInteger)itemId withDismiss:(void (^) (id))dismissBlock;
++ (UIViewController*)createModuleWithItem:(NSInteger)itemIndex withDismiss:(void (^) (id))dismissBlock;
 
 @end

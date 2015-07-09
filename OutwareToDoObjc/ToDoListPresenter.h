@@ -20,10 +20,10 @@
 @interface ToDoListPresenter : NSObject <ToDoListEventHandler>
 
 /** The router responsible for navigating to the next screen */
-@property (nonatomic, strong) ToDoListRouter* router;
+@property (nonatomic, strong) ToDoListRouter *router;
 
 /** The interactor for the to do list screen */
-@property (nonatomic, strong) ToDoListInteractor* interactor;
+@property (nonatomic, strong) ToDoListInteractor *interactor;
 
 /** The user interface to send display updates to */
 @property (nonatomic, weak) id<ToDoListUserInterface> userInterface;
@@ -35,13 +35,13 @@
  *  @param router The router that will be used to navigate to the next screen
  */
 - (instancetype)initWithUserInterface:(id<ToDoListUserInterface>)userInterface
-                           interactor:(ToDoListInteractor*)interactor
-                               router:(ToDoListRouter*)router;
+                           interactor:(ToDoListInteractor *)interactor
+                               router:(ToDoListRouter *)router;
 
 /**
  *  Method to indicate that there are items to display
  *  @param items The list of items to display
  */
-- (void)dataAvailable:(NSArray*)items;
+- (void)dataAvailable:(NSArray *)items;
 
 @end

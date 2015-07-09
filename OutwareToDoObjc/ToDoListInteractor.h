@@ -14,7 +14,7 @@
 /**
  *  The to do list interactor. Responsible for retrieving all the to do items
  */
-@property (nonatomic, weak) ToDoListPresenter* presenter;
+@property (nonatomic, weak) ToDoListPresenter *presenter;
 
 /**
  *  Method to initialise the interactor with the presenter

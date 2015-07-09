@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToDoDetailViewController">
             <connections>
-                <outlet property="label" destination="QrC-HJ-mzk" id="e09-z0-jCz"/>
                 <outlet property="textView" destination="5G7-I1-fVi" id="adh-bo-qw1"/>
                 <outlet property="view" destination="iN0-l3-epB" id="3Ig-hL-2DM"/>
             </connections>
@@ -17,30 +15,9 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrC-HJ-mzk">
-                    <rect key="frame" x="8" y="8" width="514" height="19"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HT-We-vPn">
-                    <rect key="frame" x="542" y="2.5" width="50" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="Qov-JP-vbK"/>
-                    </constraints>
-                    <state key="normal" title="Done">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="dismissButtonTapped:" destination="-1" eventType="touchUpInside" id="6Gr-RG-kNj"/>
-                    </connections>
-                </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5G7-I1-fVi">
-                    <rect key="frame" x="8" y="37" width="592" height="491"/>
+                    <rect key="frame" x="8" y="8" width="584" height="520"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="491" id="9hr-BQ-FbE"/>
-                    </constraints>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -48,15 +25,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="5G7-I1-fVi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="7XF-3Z-Ma3"/>
-                <constraint firstAttribute="trailing" secondItem="5G7-I1-fVi" secondAttribute="trailing" id="HNw-2Y-RSF"/>
-                <constraint firstItem="QrC-HJ-mzk" firstAttribute="centerY" secondItem="7HT-We-vPn" secondAttribute="centerY" id="MS0-Be-Jml"/>
-                <constraint firstItem="5G7-I1-fVi" firstAttribute="top" secondItem="QrC-HJ-mzk" secondAttribute="bottom" constant="10" id="cn5-Wy-uz1"/>
-                <constraint firstItem="QrC-HJ-mzk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="hPf-1o-jlk"/>
-                <constraint firstAttribute="trailing" secondItem="7HT-We-vPn" secondAttribute="trailing" constant="8" id="hoH-fu-chp"/>
-                <constraint firstItem="7HT-We-vPn" firstAttribute="leading" secondItem="QrC-HJ-mzk" secondAttribute="trailing" constant="20" id="k2E-2x-wVA"/>
-                <constraint firstItem="QrC-HJ-mzk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="oe4-0N-djg"/>
-                <constraint firstItem="5G7-I1-fVi" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="yk2-P4-hwz"/>
+                <constraint firstItem="5G7-I1-fVi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="AKc-Lg-IAg"/>
+                <constraint firstItem="5G7-I1-fVi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="VBX-7D-fCi"/>
+                <constraint firstAttribute="bottom" secondItem="5G7-I1-fVi" secondAttribute="bottom" constant="8" id="Z7S-3m-0Wc"/>
+                <constraint firstAttribute="trailing" secondItem="5G7-I1-fVi" secondAttribute="trailing" constant="8" id="j4W-C9-GI0"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
         </view>

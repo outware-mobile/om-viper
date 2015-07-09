@@ -16,15 +16,15 @@
 
 + (UIViewController *)createModule
 {
-    ToDoListViewController* vc = [[ToDoListViewController alloc] initWithHandler:nil];
-    ToDoListPresenter* presenter = [[ToDoListPresenter alloc] initWithUserInterface:nil interactor:nil router:nil];
-    ToDoListInteractor* interactor = [[ToDoListInteractor alloc] initWithPresenter:presenter];
-    ToDoListRouter* router = [[ToDoListRouter alloc] init];
-    vc.handler = presenter;
-    presenter.userInterface = vc;
-    presenter.interactor = interactor;
-    presenter.router = router;
-    return vc;
+    ToDoListRouter *router = [[ToDoListRouter alloc] init];
+    ToDoListInteractor *interactor = [[ToDoListInteractor alloc] initWithPresenter:nil];
+    ToDoListPresenter *presenter = [[ToDoListPresenter alloc] initWithUserInterface:nil interactor:interactor router:router];
+    ToDoListViewController *viewController = [[ToDoListViewController alloc] initWithHandler:presenter];
+
+    presenter.userInterface = viewController;
+    interactor.presenter = presenter;
+
+    return viewController;
 }
 
 @end

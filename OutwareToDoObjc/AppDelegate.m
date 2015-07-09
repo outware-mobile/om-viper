@@ -9,10 +9,6 @@
 #import "AppDelegate.h"
 #import "ToDoListModuleFactory.h"
 
-@interface AppDelegate ()
-
-@end
-
 @implementation AppDelegate
 
 
@@ -20,11 +16,12 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIViewController* vc = [ToDoListModuleFactory createModule];
-    
-    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = navController;
+    UIViewController *viewController = [ToDoListModuleFactory createModule];
+
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 
